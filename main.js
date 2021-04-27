@@ -29,7 +29,7 @@ function intToWords(intList) {
             let digit = intStr.charAt(i);
 
             if (!(digit in digitMap)) {
-                throw `Unexpected character "${digit}" in input. Expected list of integers.`;
+                throw `Unexpected character "${digit}" in input. Expected whole numbers.`;
             }
 
             word += digitMap[digit];
